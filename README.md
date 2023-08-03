@@ -75,3 +75,7 @@ On production server, run mysqldump -uroot -p --databases expertiza_production >
 On VCL, run sudo iptables -I INPUT -p TCP -s <IP_OF_PRODUCTION> -j ACCEPT #allows SCP requests 
 Run SCP to your VCL scp dump.sql <unity_id>@<VCL_IP>:/home/<unity_id> 
 mysql -uroot -p expertiza_development < dump.sql #loads database into production
+
+
+
+Approved Pr: https://github.com/expertiza/expertiza/pull/2532
